@@ -1,5 +1,5 @@
-import { mem } from 'module/mem.mjs';
-import { debug_log } from 'module/utils.mjs';
+import { mem } from './module/mem.mjs';
+import { debug_log } from './module/utils.mjs';
 
 function sleep(ms=0) {
     return new Promise(resolve => setTimeout(resolve, ms));
