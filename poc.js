@@ -67,5 +67,6 @@ export async function main() {
         }
     }
     
+    alert('triggered, try crash');
     debug_log('[+] idx: ' + idx);
 }
