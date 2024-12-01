@@ -60,8 +60,9 @@ export async function main() {
         gc();
         await sleep();
 
+        let i;
         try {
-            for (let i = 0; i < num_elems; i++) {
+            for (i = 0; i < num_elems; i++) {
                 if (data.keys().next().value.getTime() === 0xffff) {
                     idx = i;
                     break;
